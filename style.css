@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 1rem;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00d4ff;
+}
+
+section {
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about {
+    background-color: #1a1a1a;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 2rem;
+}
+
+.text-content {
+    flex: 1;
+    text-align: left;
+}
+
+.profile-pic {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 0 20px rgba(40, 136, 209, 0.5);
+}
+
+.skills {
+    background-color: #222222;
+}
+
+.projects {
+    background-color: #1a1a1a;
+}
+
+.contact {
+    background-color: #222222;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #00d4ff;
+}
+
+p {
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skills li {
+    background-color: #333333;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.skills li:hover {
+    background-color: #00d4ff;
+    color: #1a1a1a;
+    transform: scale(1.05);
+}
+
+.projects .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.project-card {
+    background-color: #333333;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    width: 100%;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #00d4ff;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    section {
+        padding: 2rem 1rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
